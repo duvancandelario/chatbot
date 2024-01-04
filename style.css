@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --margenIzquierdo: 10%;
+    --margenDerecho: 8%;
+}
+
+.toolbarTop{
+    width: 100%;
+    height: 42px;
+    background-color: #1b1b1b;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: var(--margenIzquierdo);
+    font-family: 'Red Hat Display', sans-serif;
+    z-index: 3;
+}
+
+.toolbarTop .listaNavbarTop{
+    display: flex;
+    gap: 40px;
+}
+
+.toolbarTop .listaNavbarTop li{
+    display: flex;
+    gap: 10px;
+}
+
+/*Seccion Inferior de la barra de navegacion*/
+
+.toolbarBottom{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.toolbarBottom .seccionListaBarraNavegacionBottom{
+    display: flex;
+}
+
+.toolbarBottom .seccionListaBarraNavegacionBottom .listaBarraNavegacionBottom{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 70px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 130vh;
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+}
+.hero{
+    width: 100%;
+    height: 30vh;
+    background: url(https://static.avianca.com/media/1010/preparate-para-viajaravianca.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.contenedorChatbot{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 99%;
+    height: 82vh;
+    
+}
+
+.contenedorChatbot .chatBot{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    z-index: 4;
+}
+
+/*Configuracion de estilos del chatbot*/
+
+/*Despliegue de chat*/
+.chat-container {
+    
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: solid 1px black;
+    z-index: 5;
+    
+}
+
+#chat-display {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.user-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    margin-left: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/*Reservas de vuelos*/
+.barraReservarVuelos {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.barraReservarVuelos .barraSuperiorReservarVuelos{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 27px -13px rgba(0,0,0,0.43);
+    border-radius: 10px;
+    gap: 40px;  
+    background-color: rgba(255, 255, 255, 0.379);
+    padding: 20px;
+}
+
+.barraReservarVuelos .barraSuperiorReservarVuelos .reservarRadio{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 20%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+/*BOTONES IDA Y VUELTA*/
+#IdayVuelta{
+    width: 30px;
+    height: 30px;
+    background-color: lime;
+    border-color: lime;
+}
+
+#Ida{
+    width: 30px;
+    height: 30px;
+    background-color: lime;
+    border-color: lime;
+}
